@@ -9,7 +9,7 @@ import androidx.compose.ui.unit.sp
 import com.example.superheroes.R
 
 val Cabin = FontFamily(
-    Font(R.font.cabin_regular),
+    Font(R.font.cabin_regular, FontWeight.Normal),
     Font(R.font.cabin_bold, FontWeight.Bold)
 )
 
@@ -17,21 +17,23 @@ val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = Cabin,
         fontWeight = FontWeight.Normal,
-        fontSize = 14.sp
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
     ),
     displayLarge = TextStyle(
         fontFamily = Cabin,
         fontWeight = FontWeight.Normal,
-        fontSize = 36.sp
+        fontSize = 30.sp
     ),
     displayMedium = TextStyle(
         fontFamily = Cabin,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp
     ),
-    labelSmall = TextStyle(
+    displaySmall = TextStyle(
         fontFamily = Cabin,
         fontWeight = FontWeight.Bold,
-        fontSize = 14.sp
-    ),
+        fontSize = 20.sp
+    )
 )
